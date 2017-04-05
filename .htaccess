@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# http://stackoverflow.com/a/7792912/1609607
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]

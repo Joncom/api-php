@@ -1,0 +1,18 @@
+{
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/Joncom/slim-json-api.git"
+        }
+    ],
+    "require": {
+        "php": "~5.6",
+        "ext-mbstring": "*",
+        "slim/slim": "^2.6",
+        "entomb/slim-json-api": "dev-stomp",
+        "respect/validation": "^1.0.0"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
+    }
+}
